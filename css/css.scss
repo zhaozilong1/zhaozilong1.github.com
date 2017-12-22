@@ -1,0 +1,121 @@
+@function num($n){
+  @return $n / 46.876 + rem;
+}
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: num(12);
+  box-sizing: border-box;
+  font-weight: normal;
+}
+html,body,.wrapper{
+  width: 100%;
+  height: 100%;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.top{
+  width: 100%;
+  height: num(66);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo{
+    display: block;
+    width: num(150);
+    height: num(35);
+    background: url("../img/logo-main.png") no-repeat;
+    background-size: 100% 100%;
+    margin-left: num(23);
+  }
+  span{
+    display: block;
+    font-size: num(18);
+  }
+  a{
+      display: block;
+      width: num(10);
+      height: num(10);
+      background: orange;
+      margin-right: num(23);
+
+
+  }
+
+}
+.banner{
+  width: 100%;
+  height: num(210);
+  .swiper-container{
+    width: 100%;
+    height: num(210);
+    .swiper-slide img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.box{
+  h1{
+    width: 100%;
+    height: num(60);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: num(22);
+    span{
+      font-size: num(22);
+    }
+    a{
+      font-size: num(22);
+    }
+  }
+  .banner1{
+    .swiper-slide{
+      width: num(126);
+      height: num(230);
+      .img{
+        width: num(126);
+        height: num(170);
+        img{
+          width: num(126);
+          height: num(170);
+        }
+      }
+      .tet{
+        width: num(126);
+        height: num(60);
+        line-height: num(60);
+        text-align: center;
+        font-size: num(17);
+      }
+    }
+  }
+}
+.footer{
+  width: 100%;
+  height: num(63);
+/*  position: fixed;
+  bottom: 0;*/
+  display: flex;
+  justify-content: space-around;
+  .nav{
+    .nav_img i{
+      font-size: num(30)!important;
+      text-align: center;
+    }
+    .nav_tet{
+      font-size: num(17)!important;
+      text-align: center;
+    }
+  }
+}
+
+/*.center{
+  display: flex;
+  zoom: 1;
+}*/
